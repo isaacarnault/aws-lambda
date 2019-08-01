@@ -2,9 +2,7 @@
 <summary>🔵 See solution architecture</summary>
 <p>  
 
-[![isaac-arnault-architecture-aws.png](https://i.postimg.cc/c4KWfgVc/isaac-arnault-architecture-aws.png)](https://postimg.cc/6yNFX367)
+[![isaac-arnault-AWS-architecture.png](https://i.postimg.cc/G2dQnRzH/isaac-arnault-AWS-architecture.png)](https://postimg.cc/rdZW5vBk)
 
 </p>
 </details>
-
-
