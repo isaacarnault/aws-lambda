@@ -13,7 +13,7 @@
 [![isaac-arnault-AWS-103.png](https://i.postimg.cc/W4sbmpmb/isaac-arnault-AWS-103.png)](https://postimg.cc/NKPcBcPW)
 
 </p>
-</details>
+</details><br>
 
 - Go to Lambda > Functions > lambda-function-1<br>
 - In <b>Function code</b> screen, double-click <b>lambda_function.py</b> and use the provided code (see lambda_function.py)<br>
@@ -26,7 +26,7 @@
 [![isaac-arnault-AWS-104.png](https://i.postimg.cc/ydXGmBPB/isaac-arnault-AWS-104.png)](https://postimg.cc/MMHtwCNr)
 
 </p>
-</details>
+</details><br>
 
 Go to <b>Basic settings</b> window and use as description: Lambda function 1 > Hit <b>Save</b><br>
 
@@ -37,7 +37,7 @@ Go to <b>Basic settings</b> window and use as description: Lambda function 1 > H
 [![isaac-arnault-aws-105.png](https://i.postimg.cc/nzc4WJxn/isaac-arnault-aws-105.png)](https://postimg.cc/cK2tKP6z)
 
 </p>
-</details>
+</details><br>
 
 ## Part 2: deploy an API Gateway
 
@@ -50,7 +50,7 @@ Go to <b>Basic settings</b> window and use as description: Lambda function 1 > H
 [![isaac-arnault-AWS-106.png](https://i.postimg.cc/fk40M4Gt/isaac-arnault-AWS-106.png)](https://postimg.cc/0KfNC42P)
 
 </p>
-</details>
+</details><br>
 
 - API dropdown: select "Create a new API"<br>
 - Security: select `AWS IAM` then click "Add"<br>
@@ -62,7 +62,7 @@ Go to <b>Basic settings</b> window and use as description: Lambda function 1 > H
 [![isaac-arnault-AWS-106.png](https://i.postimg.cc/fk40M4Gt/isaac-arnault-AWS-106.png)](https://postimg.cc/0KfNC42P)
 
 </p>
-</details>
+</details><br>
 
 Your <b>Designer</b> dashboard should now get updated with our new `API Gateway` as a trigger<br>
 
@@ -73,7 +73,7 @@ Your <b>Designer</b> dashboard should now get updated with our new `API Gateway`
 [![isaac-arnault-AWS-107.png](https://i.postimg.cc/J4JpZR4F/isaac-arnault-AWS-107.png)](https://postimg.cc/5645Mdz5)
 
 </p>
-</details>
+</details><br>
 
 - In <b>API Gateway</b> window click on "lambda-function-1-API"<br>
 
@@ -95,7 +95,7 @@ Your <b>Designer</b> dashboard should now get updated with our new `API Gateway`
 [![isaac-arnault-AWS-110.png](https://i.postimg.cc/gjMmK3DY/isaac-arnault-AWS-110.png)](https://postimg.cc/vx6JYgkj)
 
 </p>
-</details>
+</details><br>
 
 - We could keep this method, but for the purpose of this gist, we're going to delete it and create a new one.<br>
 
@@ -123,7 +123,7 @@ Your <b>Designer</b> dashboard should now get updated with our new `API Gateway`
 [![isaac-arnault-AWS-112.png](https://i.postimg.cc/Bv3kXXTN/isaac-arnault-AWS-112.png)](https://postimg.cc/rDhQHyYt)
 
 </p>
-</details>
+</details><br>
 
 - When prompted by the console (Add Permission to Lambda Function), click <b>OK</b>.<br>
 
@@ -136,7 +136,7 @@ Your <b>Designer</b> dashboard should now get updated with our new `API Gateway`
 [![isaac-arnault-AWS-113.png](https://i.postimg.cc/J41QDZvs/isaac-arnault-AWS-113.png)](https://postimg.cc/XXz5tGVW)
 
 </p>
-</details>
+</details><br>
 
 - Deployment stage: use "default"<br>
 - Deployment description: use "prod-deployment" then click on "Deploy"<br>
@@ -150,7 +150,7 @@ Your <b>Designer</b> dashboard should now get updated with our new `API Gateway`
 [![isaac-arnault-AWS-114.png](https://i.postimg.cc/KYJ1W3QH/isaac-arnault-AWS-114.png)](https://postimg.cc/CZnMB13G)
 
 </p>
-</details>
+</details><br>
 
 ## Part 3: create and provision a s3 bucket
 
@@ -164,7 +164,7 @@ Your <b>Designer</b> dashboard should now get updated with our new `API Gateway`
 [![isaac-arnault-AWS-119.png](https://i.postimg.cc/3x3pbhYW/isaac-arnault-AWS-119.png)](https://postimg.cc/56k66ZHM)
 
 </p>
-</details>
+</details><br>
 
 - Click on <b>serverlessisawesome</b> bucket > go to Properties > Static website hosting<br>
 
@@ -185,7 +185,7 @@ Your <b>Designer</b> dashboard should now get updated with our new `API Gateway`
 [![isaac-arnault-AWS-120.png](https://i.postimg.cc/SRK3G3RP/isaac-arnault-AWS-120.png)](https://postimg.cc/ygwL1fFh)
 
 </p>
-</details>
+</details><br>
 
 - Click on "Upload" > Select both files > Click on "Actions" > Make public<br>
 
@@ -196,7 +196,7 @@ Your <b>Designer</b> dashboard should now get updated with our new `API Gateway`
 [![isaac-arnault-AWS-121.png](https://i.postimg.cc/tgyr5wmz/isaac-arnault-AWS-121.png)](https://postimg.cc/RWsQCsm3)
 
 </p>
-</details>
+</details><br>
 
 To check if everything is running fine, click on <b>index.html</b> > click on <b>Object URL</b>
 
@@ -207,7 +207,7 @@ To check if everything is running fine, click on <b>index.html</b> > click on <b
 [![isaac-arnault-AWS-122.png](https://i.postimg.cc/90vbqn7Z/isaac-arnault-AWS-122.png)](https://postimg.cc/PvQYgKK5)
 
 </p>
-</details>
+</details><br>
 
 On a browser page we should see our `API Gateway` in action by clicking on the button.<br>
 
@@ -220,6 +220,6 @@ The text is refreshing upon clicking on the button which means our trigger is wo
 [![isaac-arnault-AWS-126.png](https://i.postimg.cc/GhtmRxxd/isaac-arnault-AWS-126.png)](https://postimg.cc/ppNHY8S6)
 
 </p>
-</details>
+</details><br>
 
 That's all for now guys. Feel free to fork it and to spread the word about it. Thanks.
